@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="img.css">
+</head>
+<body>
+
+  <h1 class="title">Image Gallery</h1>
+
+  <div class="filter-buttons">
+    <button data-filter="all">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="city">City</button>
+    <button data-filter="people">People</button>
+  </div>
+<div class="upload-section">
+  <input type="file" id="uploadInput" accept="image/*" multiple>
+</div>
+  <div class="gallery">
+    <div class="gallery-item nature">
+      <img src="https://picsum.photos/id/1015/400/300" alt="Nature">
+    </div>
+    <div class="gallery-item city">
+      <img src="https://picsum.photos/id/1025/400/300" alt="City">
+    </div>
+    <div class="gallery-item people">
+      <img src="https://picsum.photos/id/1005/400/300" alt="People">
+    </div>
+    <div class="gallery-item nature">
+      <img src="https://picsum.photos/id/1011/400/300" alt="Nature">
+    </div>
+    <div class="gallery-item city">
+      <img src="https://picsum.photos/id/1035/400/300" alt="City">
+    </div>
+    <div class="gallery-item people">
+      <img src="https://picsum.photos/id/1003/400/300" alt="People">
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" id="closeBtn">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" src="">
+    <div class="zoom-controls">
+  <button id="zoomIn">+</button>
+  <button id="zoomOut">−</button>
+  <button id="resetZoom">⭯</button>
+</div>
+    <div class="nav">
+      <span id="prev">&#10094;</span>
+      <span id="next">&#10095;</span>
+    </div>
+  </div>
+  <script src="img.js"></script>
+</body>
+</html>
